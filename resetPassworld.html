@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootcamp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              backgroundColor: "#E5E5E5",
+              greenColor: "#20DC49",
+              white: "#FFF",
+              paragraphe: "#5A5A5A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-backgroundColor font-poppins">
+    <div class="flex min-h-screen">
+      <!-- Left Section -->
+      <div class="w-2/5 relative">
+        <img
+          src="img/aranprime-5pQZUa5W_0I-unsplash 1.png"
+          alt="Background"
+          class="w-full h-[100vh] object-cover"
+        />
+        <div class="absolute top-[50px] left-12 space-y-[260px]">
+          <div class="flex items-center space-x-[11px]" alt="logo">
+            <div>
+              <img src="img/Group 433.png" alt="" />
+            </div>
+            <div>
+              <p>Logo here</p>
+            </div>
+          </div>
+          <div class="space-y-[15px]">
+            <div
+              class="flex items-center space-x-[10px] bg-greenColor w-[246px] rounded-full"
+            >
+              <img src="img/flash-circle.png" alt="" />
+              <p>Royal Stock Images</p>
+            </div>
+
+            <div>
+              <img src="img/Mask Group.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="w-3/5 flex items-center justify-center bg-gray-50">
+        <div class="w-[500px] p-8">
+          <h2 class="text-2xl font-bold text-center text-gray-800 mb-[60px]">
+            Reset Password
+          </h2>
+
+          <form id="registration-form">
+            <div class="mb-4">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="w-full px-[24px] py-[25px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Password"
+              />
+              <p
+                class="error-para text-sm text-red-500 px-[8px] hidden"
+                data-for="password"
+              >
+                Password is required.
+              </p>
+            </div>
+            <div class="mb-6">
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                class="w-full px-[24px] py-[25px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Confirm Password"
+              />
+              <p
+                class="error-para text-sm text-red-500 px-[8px] hidden"
+                data-for="confirm-password"
+              >
+                Confirm Password is required.
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              id="submit-button"
+              class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition"
+            >
+              Reset Password
+            </button>
+            <p class="text-center text-gray-600 text-sm pt-[60px]">
+              Already have an account?
+              <a href="#" class="text-green-500 hover:underline">Sign in!</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

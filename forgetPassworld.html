@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootcamp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              backgroundColor: "#E5E5E5",
+              greenColor: "#20DC49",
+              white: "#FFF",
+              paragraphe: "#5A5A5A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-backgroundColor font-poppins">
+    <div class="flex min-h-screen">
+      <!-- Left Section -->
+      <div>
+        <div class="absolute top-[50px] left-12 space-y-[260px]">
+          <div class="flex items-center space-x-[11px]" alt="logo">
+            <div>
+              <img src="img/Group 433.png" alt="" />
+            </div>
+            <div>
+              <p>Logo here</p>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="w-3/5 flex items-center justify-center bg-gray-50">
+        <div class="w-[500px] pt-[100px]">
+          <h2 class="text-2xl font-bold text-center text-gray-800 mb-[80px]">
+            Forget Password
+          </h2>
+
+          <form id="registration-form">
+            <div class="pb-[60px]">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-[24px] py-[25px] border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Enter Email"
+              />
+              <p
+                class="error-para text-sm text-red-500 px-[8px] hidden"
+                data-for="email"
+              >
+                Email is required.
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              id="submit-button"
+              class="w-full bg-gray-50 text-[#5A5A5A] py-[20px] px-4 border-solid border-[#5A5A5A] border-[1px] rounded-md"
+            >
+              Log In
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+
+      <div class="w-2/5 relative">
+        <div class="">
+          <img
+            src="img/linkedin-sales-solutions-B_DJO2-K22M-unsplash 1.png"
+            alt="Background"
+            class="w-full h-[100vh] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
